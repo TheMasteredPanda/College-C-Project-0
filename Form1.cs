@@ -28,9 +28,17 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+        /*
+         * Invoked when the form is loading. 
+         * 
+         * This will iterator through and print the iteration it is on five times.
+         */
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Loading! Printing value " + i.ToString + ".");
+            }
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
